@@ -48,6 +48,7 @@ public class GameProgress implements Serializable {
                 fis.read(buffer);
                 zout.write(buffer);
                 zout.closeEntry();
+                fis.close();
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
